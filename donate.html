@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate & Support | Atipriye Soch Foundation</title>
+  <meta name="description" content="Support Atipriye Soch Foundation with 80G tax-exempt donations. Fund child education, women empowerment, men's mental health, and transgender equality across India.">
+  <meta name="keywords" content="Donate NGO Ludhiana, 80G tax exemption donation Punjab, Razorpay donation, sponsor child education, support mental health India">
+  <link rel="canonical" href="https://atipriyesochfoundation.org/donate.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Atipriye Soch Foundation Home">
+        <div class="navbar__logo-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg" aria-hidden="true">
+            <path d="M6 24 C6 12 16 4 24 4" stroke="#F68B2B" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <path d="M6 24 C6 36 16 44 24 44" stroke="#5AB95A" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <circle cx="30" cy="24" r="10" fill="#2D466B"/>
+            <path d="M26 21 C26 19 28 17 30 17 C32 17 34 19 34 21 C34 24 30 27 30 27 C30 27 26 24 26 21Z" fill="white" opacity="0.9"/>
+            <line x1="30" y1="27" x2="30" y2="30" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M28 30 L32 30" stroke="#F68B2B" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="navbar__logo-text">
+          <div class="navbar__logo-name">Atipriye Soch</div>
+          <div class="navbar__logo-descriptor">Foundation</div>
+          <div class="navbar__logo-tagline">Educate · Empower · Include</div>
+        </div>
+      </a>
+      <div class="navbar__nav" role="list">
+        <a href="index.html" role="listitem">Home</a>
+        <a href="about.html" role="listitem">About</a>
+        <div class="navbar__dropdown" role="listitem">
+          <a href="#pillars" aria-haspopup="true" aria-expanded="false">Our Work ▾</a>
+          <div class="navbar__dropdown-menu" role="menu">
+            <a href="pillar-education.html" role="menuitem"><span class="pillar-dot" style="background:#F68B2B"></span>Child Education</a>
+            <a href="pillar-women.html" role="menuitem"><span class="pillar-dot" style="background:#5AB95A"></span>Women Empowerment</a>
+            <a href="pillar-mental-health.html" role="menuitem"><span class="pillar-dot" style="background:#1F7A8C"></span>Men's Mental Health</a>
+            <a href="pillar-transgender.html" role="menuitem"><span class="pillar-dot" style="background:#7B4FA0"></span>Transgender Equality</a>
+          </div>
+        </div>
+        <a href="get-involved.html" role="listitem">Get Involved</a>
+        <a href="contact.html" role="listitem">Contact</a>
+        <a href="donate.html" class="navbar__cta" style="background:var(--deep-saffron)" role="listitem">Donate Now</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu" id="mobile-menu" aria-label="Mobile Navigation">
+    <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Close menu">✕</button>
+    <nav class="mobile-menu__nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="pillar-education.html">Child Education</a>
+      <a href="pillar-women.html">Women Empowerment</a>
+      <a href="pillar-mental-health.html">Men's Mental Health</a>
+      <a href="pillar-transgender.html">Transgender Equality</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" style="color:var(--deep-saffron);font-weight:700">Donate Now</a>
+    </nav>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" style="height:340px">
+    <div class="page-hero__bg" style="background-image:url('images/hero_banner.jpg')"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Donate</span>
+      </nav>
+      <div style="display:flex;gap:.75rem;align-items:center;margin-bottom:.5rem;flex-wrap:wrap">
+        <span class="badge badge--saffron">Tax Exemption Receipt (80G Eligible)</span>
+        <span class="badge badge--green">100% Transparent Utilization</span>
+      </div>
+      <h1 class="page-hero__title">Support Our Cause</h1>
+      <p class="page-hero__subtitle">
+        Your contribution directly finances learning centers, women's livelihoods, crisis counselling, and transgender shelter security.
+      </p>
+    </div>
+  </header>
+
+  <!-- DONATION PORTAL SECTION -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- MAIN DONATION CARD -->
+      <div class="donation-card">
+        
+        <!-- FREQUENCY TOGGLE -->
+        <div class="freq-toggle" role="tablist">
+          <button type="button" class="freq-btn active" id="freq-once" onclick="setFrequency('once')">Give Once</button>
+          <button type="button" class="freq-btn" id="freq-monthly" onclick="setFrequency('monthly')">Monthly Seva (Recurring)</button>
+        </div>
+
+        <!-- TIER BUTTONS -->
+        <div class="tier-grid">
+          <button type="button" class="tier-btn" onclick="selectTier(500, this)">
+            ₹500
+            <span>1 Kit & Books</span>
+          </button>
+          <button type="button" class="tier-btn active" onclick="selectTier(1000, this)">
+            ₹1,000
+            <span>Remedial Care</span>
+          </button>
+          <button type="button" class="tier-btn" onclick="selectTier(2500, this)">
+            ₹2,500
+            <span>Women Sewing Hub</span>
+          </button>
+          <button type="button" class="tier-btn" onclick="selectTier(5000, this)">
+            ₹5,000
+            <span>Shelter & Legal Aid</span>
+          </button>
+        </div>
+
+        <!-- DONATION FORM -->
+        <form id="donation-form" onsubmit="initiateRazorpay(event)">
+          <div class="form-group">
+            <label for="custom_amount">Contribution Amount (INR ₹) *</label>
+            <input type="number" id="custom_amount" value="1000" min="100" required oninput="handleAmountInput(this.value)">
+          </div>
+
+          <div class="form-group">
+            <label for="pillar_choice">Direct My Contribution Towards *</label>
+            <select id="pillar_choice" required>
+              <option value="Where Needed Most">Where Needed Most (Flexible Core Fund)</option>
+              <option value="Child Education">Child Education (Schools & Remedial Labs)</option>
+              <option value="Women Empowerment">Women Empowerment (Livelihood & SHGs)</option>
+              <option value="Men's Mental Health">Men's Mental Health (Helpline & Support Circles)</option>
+              <option value="Transgender Equality">Transgender Equality (Garima Greh & Legal Aid)</option>
+            </select>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="donor_name">Donor Full Name *</label>
+              <input type="text" id="donor_name" required placeholder="Full Name as on PAN">
+            </div>
+
+            <div class="form-group">
+              <label for="donor_email">Email for 80G e-Receipt *</label>
+              <input type="email" id="donor_email" required placeholder="name@domain.com">
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="donor_phone">Mobile Number *</label>
+              <input type="tel" id="donor_phone" required placeholder="+91 98765 43210">
+            </div>
+
+            <div class="form-group">
+              <label for="donor_pan">PAN Card Number (For 80G Tax Exemption)</label>
+              <input type="text" id="donor_pan" placeholder="ABCDE1234F" maxlength="10" style="text-transform:uppercase">
+            </div>
+          </div>
+
+          <div style="background:var(--mist);padding:1rem;border-radius:var(--radius-md);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem">
+            <div style="font-size:.85rem;color:var(--slate)">
+              Secured by <strong>Razorpay Payment Gateway</strong> &nbsp;|&nbsp; 256-Bit SSL Encryption
+            </div>
+            <div style="display:flex;gap:.5rem;align-items:center">
+              <span class="badge badge--green">80G Eligible</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary" id="proceed-pay-btn" style="width:100%;justify-content:center;padding:1.1rem;font-size:.95rem">
+            Proceed with Razorpay Secure Pay (₹<span id="btn-amount-display">1,000</span>)
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECT BANK TRANSFER & UPI SECTION -->
+  <section class="section section--mist">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;gap:var(--space-lg)">
+        <div>
+          <span class="tagline-text">Direct Wire & UPI</span>
+          <h2 class="section-title">Institutional NEFT / RTGS Transfers</h2>
+          <span class="accent-line"></span>
+          <p style="color:var(--slate);line-height:1.7;margin-bottom:1.5rem">
+            Corporations, trusts, and individuals preferring direct wire transfers or UPI apps can donate directly into the foundation's official audited Section 8 bank account.
+          </p>
+
+          <div class="table-wrapper">
+            <table class="data-table" aria-label="Official Bank Account Details">
+              <tbody>
+                <tr>
+                  <td class="highlight">Account Holder</td>
+                  <td><strong>ATIPRIYE SOCH FOUNDATION</strong></td>
+                </tr>
+                <tr>
+                  <td class="highlight">Account Type</td>
+                  <td>Current Account (Section 8 Non-Profit)</td>
+                </tr>
+                <tr>
+                  <td class="highlight">Account Number</td>
+                  <td><code>061137002024889</code></td>
+                </tr>
+                <tr>
+                  <td class="highlight">IFSC Code</td>
+                  <td><code>PUNB0027800</code></td>
+                </tr>
+                <tr>
+                  <td class="highlight">Bank & Branch</td>
+                  <td>Punjab National Bank, GNE College Branch, Ludhiana</td>
+                </tr>
+                <tr>
+                  <td class="highlight">UPI VPA</td>
+                  <td><code>atipriyesoch@pnb</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:.85rem;color:var(--slate)">
+            * After wire transfer, please email your transaction UTR reference with donor PAN to <strong>donations@atipriyesochfoundation.org</strong> to claim your Form 10BE receipt.
+          </p>
+        </div>
+
+        <div>
+          <div class="content-box" style="text-align:center;padding:2.5rem;align-items:center">
+            <h3 style="color:var(--navy);font-size:1.25rem;margin-bottom:.5rem">Instant UPI QR Code</h3>
+            <p style="color:var(--slate);font-size:.85rem;margin-bottom:1.5rem">Scan with Google Pay, PhonePe, Paytm, or BHIM</p>
+            
+            <div style="background:var(--white);padding:1.5rem;border-radius:var(--radius-md);box-shadow:var(--shadow-sm);border:2px dashed var(--saffron);display:inline-block;margin-bottom:1rem">
+              <!-- SVG QR CODE SIMULATION -->
+              <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="180" height="180" fill="white"/>
+                <!-- Corner 1 -->
+                <rect x="15" y="15" width="45" height="45" stroke="#2D466B" stroke-width="6" fill="none"/>
+                <rect x="27" y="27" width="21" height="21" fill="#2D466B"/>
+                <!-- Corner 2 -->
+                <rect x="120" y="15" width="45" height="45" stroke="#2D466B" stroke-width="6" fill="none"/>
+                <rect x="132" y="27" width="21" height="21" fill="#2D466B"/>
+                <!-- Corner 3 -->
+                <rect x="15" y="120" width="45" height="45" stroke="#2D466B" stroke-width="6" fill="none"/>
+                <rect x="27" y="132" width="21" height="21" fill="#2D466B"/>
+                <!-- Center bulb icon -->
+                <circle cx="90" cy="90" r="16" fill="#F68B2B"/>
+                <path d="M85 87 C85 84 87 82 90 82 C93 82 95 84 95 87 C95 90 90 93 90 93" stroke="white" stroke-width="2" fill="none"/>
+                <circle cx="90" cy="96" r="1.5" fill="white"/>
+                <!-- Random QR Grid Blocks -->
+                <rect x="75" y="20" width="8" height="8" fill="#2D466B"/>
+                <rect x="95" y="20" width="8" height="8" fill="#2D466B"/>
+                <rect x="75" y="35" width="12" height="8" fill="#2D466B"/>
+                <rect x="92" y="50" width="14" height="8" fill="#2D466B"/>
+                <rect x="20" y="75" width="10" height="10" fill="#2D466B"/>
+                <rect x="40" y="85" width="12" height="10" fill="#2D466B"/>
+                <rect x="120" y="75" width="10" height="10" fill="#2D466B"/>
+                <rect x="145" y="85" width="15" height="8" fill="#2D466B"/>
+                <rect x="120" y="115" width="12" height="12" fill="#2D466B"/>
+                <rect x="145" y="130" width="10" height="10" fill="#2D466B"/>
+                <rect x="80" y="125" width="14" height="8" fill="#2D466B"/>
+                <rect x="70" y="145" width="12" height="12" fill="#2D466B"/>
+                <rect x="100" y="150" width="15" height="8" fill="#2D466B"/>
+              </svg>
+            </div>
+            
+            <div style="font-family:var(--font-ui);font-weight:700;color:var(--navy);font-size:.95rem">
+              UPI ID: atipriyesoch@pnb
+            </div>
+            <div style="font-size:.8rem;color:var(--slate)">Verified Merchant: Atipriye Soch Foundation</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAZORPAY PAYMENT SIMULATION MODAL -->
+  <div class="modal-overlay" id="razorpay-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div style="display:flex;align-items:center;gap:.6rem">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#0C2340"><rect width="24" height="24" rx="4" fill="#528FF0"/><path d="M12 6L7 18h4l1-3h4l1 3h4L16 6h-4zm1.5 6.5h-2l1-3.5 1 3.5z" fill="white"/></svg>
+          <span style="font-weight:700;letter-spacing:.05em">Razorpay Checkout</span>
+        </div>
+        <button type="button" class="modal-close" onclick="closeRazorpayModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modal-step-payment">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;border-bottom:1px solid rgba(45,70,107,0.1);padding-bottom:.75rem">
+          <div>
+            <div style="font-size:.85rem;color:var(--slate)">Paying to</div>
+            <div style="font-weight:700;color:var(--navy);font-size:1.05rem">Atipriye Soch Foundation</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.85rem;color:var(--slate)">Amount</div>
+            <div style="font-weight:700;color:var(--deep-saffron);font-size:1.35rem">₹<span id="modal-pay-amount">1,000</span></div>
+          </div>
+        </div>
+
+        <p style="font-size:.85rem;color:var(--slate);margin-bottom:1rem">Select Preferred Payment Mode:</p>
+        
+        <div style="display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.5rem">
+          <button type="button" class="btn btn--outline" style="justify-content:space-between;padding:.85rem 1.25rem;border-color:rgba(45,70,107,0.2)" onclick="completeSimulatedPayment('UPI')">
+            <span>📱 UPI (GPay, PhonePe, Paytm, BHIM)</span>
+            <span style="color:var(--deep-green);font-size:.75rem;font-weight:700">FASTEST</span>
+          </button>
+          <button type="button" class="btn btn--outline" style="justify-content:space-between;padding:.85rem 1.25rem;border-color:rgba(45,70,107,0.2)" onclick="completeSimulatedPayment('Card')">
+            <span>💳 Credit / Debit Card (Visa, MasterCard, RuPay)</span>
+            <span style="color:var(--slate);font-size:.75rem">INSTANT</span>
+          </button>
+          <button type="button" class="btn btn--outline" style="justify-content:space-between;padding:.85rem 1.25rem;border-color:rgba(45,70,107,0.2)" onclick="completeSimulatedPayment('NetBanking')">
+            <span>🏦 Net Banking (All Indian Banks)</span>
+            <span style="color:var(--slate);font-size:.75rem">SECURE</span>
+          </button>
+        </div>
+
+        <div style="text-align:center;font-size:.75rem;color:var(--slate)">
+          🔒 Secured by 256-bit encryption · Razorpay Trusted Non-Profit Gateway
+        </div>
+      </div>
+
+      <!-- SUCCESS RECEIPT VIEW -->
+      <div class="modal-body" id="modal-step-success" style="display:none;text-align:center">
+        <div style="width:60px;height:60px;border-radius:50%;background:#e8f5e9;color:#2e7d32;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem">
+          ✓
+        </div>
+        <h3 style="color:var(--navy);font-size:1.35rem;margin-bottom:.5rem">Thank You For Your Seva!</h3>
+        <p style="color:var(--slate);font-size:.9rem;line-height:1.6;margin-bottom:1.5rem">
+          Your donation of <strong>₹<span id="receipt-amount">1,000</span></strong> has been successfully processed under Razorpay Transaction ID <code id="receipt-txn">rzp_live_89129841</code>.
+        </p>
+
+        <div style="background:var(--mist);border-radius:var(--radius-md);padding:1rem;text-align:left;font-size:.85rem;margin-bottom:1.5rem">
+          <div><strong>Donor:</strong> <span id="receipt-donor">Bhoumic Garg</span></div>
+          <div><strong>Receipt Type:</strong> Section 8 Official Tax Exemption Receipt (80G Eligible)</div>
+          <div><strong>CIN:</strong> U85500PB2024NPL061137</div>
+        </div>
+
+        <button type="button" class="btn btn--primary" style="width:100%;justify-content:center;margin-bottom:.5rem" onclick="window.print()">
+          🖨 Print 80G e-Receipt
+        </button>
+        <button type="button" class="btn btn--outline" style="width:100%;justify-content:center" onclick="closeRazorpayModal()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">Atipriye Soch Foundation</div>
+          <div class="footer__brand-tagline">Educate · Empower · Include</div>
+          <p>A registered Section 8 not-for-profit company dedicated to systemic social upliftment, inclusive education, mental health dignity, and human rights across India.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Navigation</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Our Pillars</div>
+          <div class="footer__links">
+            <a href="pillar-education.html">Child Education</a>
+            <a href="pillar-women.html">Women Empowerment</a>
+            <a href="pillar-mental-health.html">Men's Mental Health</a>
+            <a href="pillar-transgender.html">Transgender Equality</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <div style="font-family:var(--font-body);font-size:.875rem;color:rgba(255,255,255,.6);line-height:1.8">
+            <p>#2780, St. No. 5B, Guru Nanak Colony,<br>W. No. 61 Block-B, GNE College,<br>Ludhiana 141006, Punjab</p>
+            <br>
+            <p>Mental Health Helpline:<br><a href="tel:14416" style="color:#a5d6a7;font-weight:600">TeleMANAS: 14416</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <p>
+          <strong>ATIPRIYE SOCH FOUNDATION</strong> (a Section 8 company) &nbsp;|&nbsp;
+          Regd. Office: #2780, St. No. 5B, Guru Nanak Colony, W. No. 61 Block-B, GNE College, Ludhiana 141006, Punjab &nbsp;|&nbsp;
+          CIN: U85500PB2024NPL061137 &nbsp;|&nbsp; NGO Darpan: PB/2024/0407003 &nbsp;|&nbsp;
+          Helpline: 14416 &nbsp;|&nbsp; Email: info@atipriyesochfoundation.org &nbsp;|&nbsp; Web: atipriyesochfoundation.org
+        </p>
+        <p style="margin-top:.5rem">Copyright &copy; 2024–2026 Atipriye Soch Foundation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+    const closeBtn = document.getElementById('mobile-close-btn');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      overlay.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      overlay.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    // Parse URL parameter for pre-selecting pillar
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const pillar = urlParams.get('pillar');
+      if (pillar) {
+        const pillarSelect = document.getElementById('pillar_choice');
+        if (pillar === 'education') pillarSelect.value = 'Child Education';
+        else if (pillar === 'women') pillarSelect.value = 'Women Empowerment';
+        else if (pillar === 'mental-health') pillarSelect.value = "Men's Mental Health";
+        else if (pillar === 'transgender') pillarSelect.value = 'Transgender Equality';
+      }
+    });
+
+    // Frequency toggle
+    let frequency = 'once';
+    function setFrequency(type) {
+      frequency = type;
+      document.getElementById('freq-once').classList.toggle('active', type === 'once');
+      document.getElementById('freq-monthly').classList.toggle('active', type === 'monthly');
+    }
+
+    // Tier selection
+    function selectTier(amount, btn) {
+      document.querySelectorAll('.tier-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('custom_amount').value = amount;
+      document.getElementById('btn-amount-display').textContent = Number(amount).toLocaleString('en-IN');
+    }
+
+    function handleAmountInput(val) {
+      document.querySelectorAll('.tier-btn').forEach(b => b.classList.remove('active'));
+      const num = parseInt(val) || 0;
+      document.getElementById('btn-amount-display').textContent = num.toLocaleString('en-IN');
+    }
+
+    // Razorpay simulation
+    const modal = document.getElementById('razorpay-modal');
+    function initiateRazorpay(e) {
+      e.preventDefault();
+      const amount = document.getElementById('custom_amount').value;
+      document.getElementById('modal-pay-amount').textContent = Number(amount).toLocaleString('en-IN');
+      document.getElementById('modal-step-payment').style.display = 'block';
+      document.getElementById('modal-step-success').style.display = 'none';
+      modal.classList.add('active');
+    }
+
+    function closeRazorpayModal() {
+      modal.classList.remove('active');
+    }
+
+    function completeSimulatedPayment(mode) {
+      const amount = document.getElementById('custom_amount').value;
+      const donor = document.getElementById('donor_name').value;
+      const pillar = document.getElementById('pillar_choice').value;
+      const rzpId = 'rzp_live_' + Math.floor(10000000 + Math.random() * 90000000);
+
+      document.getElementById('receipt-amount').textContent = Number(amount).toLocaleString('en-IN');
+      document.getElementById('receipt-donor').textContent = donor || 'Valued Donor';
+      document.getElementById('receipt-pillar').textContent = pillar;
+      document.getElementById('receipt-txn').textContent = rzpId;
+
+      document.getElementById('modal-step-payment').style.display = 'none';
+      document.getElementById('modal-step-success').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

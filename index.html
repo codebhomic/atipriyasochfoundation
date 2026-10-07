@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atipriye Soch Foundation | Educate · Empower · Include</title>
+  <meta name="description" content="Atipriye Soch Foundation is a not-for-profit Section 8 company in Ludhiana, Punjab working across India on child education, women empowerment, men's mental health, and transgender equality.">
+  <meta name="keywords" content="Atipriye Soch Foundation, NGO Ludhiana, child education Punjab, women empowerment, men mental health India, transgender equality NGO">
+  <meta property="og:title" content="Atipriye Soch Foundation | Educate · Empower · Include">
+  <meta property="og:description" content="Changing lives by changing thinking. Education, dignity and support begin with how a community thinks about the people it has left behind.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://atipriyesochfoundation.org/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Atipriye Soch Foundation Home">
+        <div class="navbar__logo-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg" aria-hidden="true">
+            <path d="M6 24 C6 12 16 4 24 4" stroke="#F68B2B" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <path d="M6 24 C6 36 16 44 24 44" stroke="#5AB95A" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <circle cx="30" cy="24" r="10" fill="#2D466B"/>
+            <path d="M26 21 C26 19 28 17 30 17 C32 17 34 19 34 21 C34 24 30 27 30 27 C30 27 26 24 26 21Z" fill="white" opacity="0.9"/>
+            <line x1="30" y1="27" x2="30" y2="30" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M28 30 L32 30" stroke="#F68B2B" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="navbar__logo-text">
+          <div class="navbar__logo-name">Atipriye Soch</div>
+          <div class="navbar__logo-descriptor">Foundation</div>
+          <div class="navbar__logo-tagline">Educate · Empower · Include</div>
+        </div>
+      </a>
+      <div class="navbar__nav" role="list">
+        <a href="index.html" class="active" role="listitem">Home</a>
+        <a href="about.html" role="listitem">About</a>
+        <div class="navbar__dropdown" role="listitem">
+          <a href="#pillars" aria-haspopup="true" aria-expanded="false">Our Work ▾</a>
+          <div class="navbar__dropdown-menu" role="menu">
+            <a href="pillar-education.html" role="menuitem"><span class="pillar-dot" style="background:#F68B2B"></span>Child Education</a>
+            <a href="pillar-women.html" role="menuitem"><span class="pillar-dot" style="background:#5AB95A"></span>Women Empowerment</a>
+            <a href="pillar-mental-health.html" role="menuitem"><span class="pillar-dot" style="background:#1F7A8C"></span>Men's Mental Health</a>
+            <a href="pillar-transgender.html" role="menuitem"><span class="pillar-dot" style="background:#7B4FA0"></span>Transgender Equality</a>
+          </div>
+        </div>
+        <a href="get-involved.html" role="listitem">Get Involved</a>
+        <a href="contact.html" role="listitem">Contact</a>
+        <a href="donate.html" class="navbar__cta" role="listitem" id="nav-donate-btn">Donate Now</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu" id="mobile-menu" aria-label="Mobile Navigation">
+    <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Close menu">✕</button>
+    <nav class="mobile-menu__nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="pillar-education.html">Child Education</a>
+      <a href="pillar-women.html">Women Empowerment</a>
+      <a href="pillar-mental-health.html">Men's Mental Health</a>
+      <a href="pillar-transgender.html">Transgender Equality</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" style="color:var(--deep-saffron);font-weight:700">Donate Now</a>
+    </nav>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero__bg" style="background-image:url('images/hero_banner.jpg')"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__tagline">Ludhiana, Punjab · Across India</p>
+      <h1 class="hero__title" id="hero-title">
+        Changing Lives by<br>Changing <span class="soch">Soch</span>
+      </h1>
+      <p class="hero__body">
+        Education, dignity and support begin with how a community thinks about the people it has left behind. We work at the root — with ideas, evidence and compassion.
+      </p>
+      <div class="hero__pillars" aria-label="Our four pillars">
+        <span class="hero__pillar-tag hero__pillar-tag--edu">Child Education</span>
+        <span class="hero__pillar-tag hero__pillar-tag--women">Women Empowerment</span>
+        <span class="hero__pillar-tag hero__pillar-tag--mh">Men's Mental Health</span>
+        <span class="hero__pillar-tag hero__pillar-tag--trans">Transgender Equality</span>
+      </div>
+      <div class="hero__actions">
+        <a href="about.html" class="btn btn--primary">Discover Our Mission</a>
+        <a href="donate.html" class="btn btn--secondary">Support Our Work</a>
+      </div>
+    </div>
+    <a href="#stats" class="hero__scroll" aria-label="Scroll to learn more">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      Scroll
+    </a>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip" id="stats" aria-label="Impact Statistics">
+    <div class="container">
+      <div class="stats-strip__grid">
+        <div class="stats-strip__item">
+          <div class="stats-strip__num"><span class="counter" data-target="2024">2024</span></div>
+          <div class="stats-strip__label">Founded · Ludhiana</div>
+        </div>
+        <div class="stats-strip__item">
+          <div class="stats-strip__num"><span class="counter" data-target="4">4</span></div>
+          <div class="stats-strip__label">Programme Pillars</div>
+        </div>
+        <div class="stats-strip__item">
+          <div class="stats-strip__num"><span class="counter" data-target="9">9</span></div>
+          <div class="stats-strip__label">MOA Registered Objects</div>
+        </div>
+        <div class="stats-strip__item">
+          <div class="stats-strip__num">Pan-India</div>
+          <div class="stats-strip__label">Area of Operation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR PILLARS SECTION -->
+  <section class="section section--mist" id="pillars" aria-labelledby="pillars-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="tagline-text">Our Four Pillars</span>
+        <h2 class="section-title" id="pillars-title">Where We Work</h2>
+        <p>Every programme we run traces back to a registered object in our MOA. We do not scatter — we go deep, in four carefully chosen areas of change.</p>
+      </div>
+      <div class="grid-4">
+        <!-- Child Education -->
+        <article class="pillar-card" aria-labelledby="card-edu-title">
+          <div class="pillar-card__img-wrap">
+            <img src="images/pillar_education.jpg" alt="Children learning in a bright classroom" loading="lazy" width="400" height="220">
+            <span class="pillar-card__tag" style="background:#F68B2B">Child Education</span>
+          </div>
+          <div class="pillar-card__body">
+            <div class="pillar-card__icon" style="background:#F68B2B">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3 class="pillar-card__title" id="card-edu-title">Child Education</h3>
+            <p>Schools, pre-schools, vocational centres, hostels and scholarships. We run curriculum R&D and ensure student and staff health and welfare.</p>
+            <a href="pillar-education.html" class="pillar-card__link" style="color:#A65508">Learn More →</a>
+          </div>
+        </article>
+        <!-- Women Empowerment -->
+        <article class="pillar-card" aria-labelledby="card-women-title">
+          <div class="pillar-card__img-wrap">
+            <img src="images/pillar_women.jpg" alt="Women entrepreneurs in a skills training workshop" loading="lazy" width="400" height="220">
+            <span class="pillar-card__tag" style="background:#5AB95A">Women Empowerment</span>
+          </div>
+          <div class="pillar-card__body">
+            <div class="pillar-card__icon" style="background:#5AB95A">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M12 14c-6 0-8 2-8 4v1h16v-1c0-2-2-4-8-4z"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="9" y1="22" x2="15" y2="22"/></svg>
+            </div>
+            <h3 class="pillar-card__title" id="card-women-title">Women Empowerment</h3>
+            <p>Skills and livelihood programmes, safe homes and hostels, and leadership opportunities for women. We recognise agency, not helplessness.</p>
+            <a href="pillar-women.html" class="pillar-card__link" style="color:#2E7D32">Learn More →</a>
+          </div>
+        </article>
+        <!-- Men's Mental Health -->
+        <article class="pillar-card" aria-labelledby="card-mh-title">
+          <div class="pillar-card__img-wrap">
+            <img src="images/pillar_mental_health.jpg" alt="Men in a supportive peer group conversation" loading="lazy" width="400" height="220">
+            <span class="pillar-card__tag" style="background:#1F7A8C">Men's Mental Health</span>
+          </div>
+          <div class="pillar-card__body">
+            <div class="pillar-card__icon" style="background:#1F7A8C">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="pillar-card__title" id="card-mh-title">Men's Mental Health</h3>
+            <p>Counselling, peer support, helplines and crisis intervention. We work with NIMHANS and State Mental Health Authorities to break the stigma.</p>
+            <a href="pillar-mental-health.html" class="pillar-card__link" style="color:#1F7A8C">Learn More →</a>
+          </div>
+        </article>
+        <!-- Transgender Equality -->
+        <article class="pillar-card" aria-labelledby="card-trans-title">
+          <div class="pillar-card__img-wrap">
+            <img src="images/pillar_transgender.jpg" alt="Transgender community members at an empowerment event" loading="lazy" width="400" height="220">
+            <span class="pillar-card__tag" style="background:#7B4FA0">Transgender Equality</span>
+          </div>
+          <div class="pillar-card__body">
+            <div class="pillar-card__icon" style="background:#7B4FA0">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <h3 class="pillar-card__title" id="card-trans-title">Transgender Equality</h3>
+            <p>Education, livelihood, Garima Greh shelter, legal aid and healthcare for transgender persons. We implement the SMILE scheme as an authorised agency.</p>
+            <a href="pillar-transgender.html" class="pillar-card__link" style="color:#7B4FA0">Learn More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT / ABOUT SPLIT -->
+  <section class="section" id="our-story" aria-labelledby="our-story-title">
+    <div class="container">
+      <div class="impact-grid">
+        <div class="impact-grid__img">
+          <img src="images/about_banner.jpg" alt="Diverse Punjabi community gathering at golden hour" loading="lazy">
+        </div>
+        <div class="impact-grid__content">
+          <span class="tagline-text">Our Story</span>
+          <h2 class="section-title" id="our-story-title">Why We Exist</h2>
+          <p>
+            Founded on 27 March 2024 by Dr. Ati Priye and co-director Rekha Priya, Atipriye Soch Foundation is a registered Section 8 company headquartered in Ludhiana, Punjab. "Soch" means thought — we believe change begins with how a community thinks.
+          </p>
+          <ul class="impact-list" aria-label="Foundation highlights">
+            <li>Section 8 company — CIN: U85500PB2024NPL061137</li>
+            <li>NGO Darpan Registered: PB/2024/0407003</li>
+            <li>Four pillars formally registered since June 2026</li>
+            <li>Area of operation: Whole of India and internationally</li>
+          </ul>
+          <a href="about.html" class="btn btn--primary">Read Our Full Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND PROMISE STRIP -->
+  <section class="section section--navy" id="brand-promise" aria-labelledby="promise-title">
+    <div class="container text-center">
+      <span class="tagline-text" style="color:var(--saffron)">Our Promise</span>
+      <h2 class="section-title" id="promise-title" style="color:white;margin-top:.75rem">EDUCATE · EMPOWER · INCLUDE</h2>
+      <p style="font-family:var(--font-body);color:rgba(255,255,255,.75);max-width:640px;margin:1.5rem auto;line-height:1.8;font-size:1.05rem">
+        Three words that map precisely to our work: educate the children who have been left out, empower the women and men who have been pushed to the margins, and include every person whose identity has been erased.
+      </p>
+      <div class="grid-3" style="margin-top:var(--space-md)">
+        <div style="background:rgba(255,255,255,.05);border-radius:var(--radius-lg);padding:2rem;border:1px solid rgba(255,255,255,.1)">
+          <div style="font-family:var(--font-display);font-size:2rem;color:var(--saffron);margin-bottom:.5rem">EDUCATE</div>
+          <p style="font-family:var(--font-body);font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.6">Schools, pre-schools, vocational centres, curriculum and scholarships for children from low-income families.</p>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border-radius:var(--radius-lg);padding:2rem;border:1px solid rgba(255,255,255,.1)">
+          <div style="font-family:var(--font-display);font-size:2rem;color:var(--saffron);margin-bottom:.5rem">EMPOWER</div>
+          <p style="font-family:var(--font-body);font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.6">Skills, livelihoods and leadership for women. Mental health support and peer networks for men and boys.</p>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border-radius:var(--radius-lg);padding:2rem;border:1px solid rgba(255,255,255,.1)">
+          <div style="font-family:var(--font-display);font-size:2rem;color:var(--saffron);margin-bottom:.5rem">INCLUDE</div>
+          <p style="font-family:var(--font-body);font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.6">Education, shelter, legal aid and healthcare for transgender, intersex and gender non-conforming persons.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED SECTION -->
+  <section class="section section--mist" id="get-involved" aria-labelledby="involved-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="tagline-text">Join Us</span>
+        <h2 class="section-title" id="involved-title">Get Involved</h2>
+        <p>There are many ways to become part of the change. Whether you give your time, skills or resources — every contribution counts.</p>
+      </div>
+      <div class="grid-3">
+        <div style="background:white;border-radius:var(--radius-lg);padding:2rem;box-shadow:var(--shadow-sm);text-align:center;transition:var(--transition)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(246,139,43,.12);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F68B2B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.75rem">Donate</h3>
+          <p style="font-family:var(--font-body);font-size:.9rem;color:var(--slate);line-height:1.6;margin-bottom:1.25rem">Fund a child's education, a woman's skill training, or a helpline minute. Every rupee changes a life.</p>
+          <a href="donate.html" class="btn btn--primary btn--sm" id="get-involved-donate-btn">Donate Now</a>
+        </div>
+        <div style="background:white;border-radius:var(--radius-lg);padding:2rem;box-shadow:var(--shadow-sm);text-align:center;transition:var(--transition)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(90,185,90,.12);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5AB95A" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.75rem">Volunteer</h3>
+          <p style="font-family:var(--font-body);font-size:.9rem;color:var(--slate);line-height:1.6;margin-bottom:1.25rem">Teach, mentor, counsel or help with community events. Join a chapter near you and grow with us.</p>
+          <a href="get-involved.html#volunteer" class="btn btn--outline btn--sm" id="get-involved-volunteer-btn">Apply to Volunteer</a>
+        </div>
+        <div style="background:white;border-radius:var(--radius-lg);padding:2rem;box-shadow:var(--shadow-sm);text-align:center;transition:var(--transition)" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(45,70,107,.08);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2D466B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.75rem">Partner</h3>
+          <p style="font-family:var(--font-body);font-size:.9rem;color:var(--slate);line-height:1.6;margin-bottom:1.25rem">CSR collaborations, government partnerships, institutional co-branding — let us build something lasting together.</p>
+          <a href="contact.html#partner" class="btn btn--outline btn--sm" id="get-involved-partner-btn">Become a Partner</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATE STRIP -->
+  <section class="donate-strip" id="donate-strip" aria-labelledby="donate-strip-title">
+    <div class="container" style="position:relative;z-index:1">
+      <span class="tagline-text" style="color:rgba(255,255,255,.8);display:block;margin-bottom:.75rem">Make a Difference Today</span>
+      <h2 class="section-title" id="donate-strip-title">Support the Change</h2>
+      <p>Your donation funds education for a child, a skill for a woman, a conversation that saves a life. Transparent, audited and accountable — because you deserve to know where your money goes.</p>
+      <a href="donate.html" class="btn btn--navy" id="donate-strip-btn">Donate Securely via Razorpay</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">Atipriye Soch Foundation</div>
+          <div class="footer__brand-tagline">Educate · Empower · Include</div>
+          <p>A not-for-profit Section 8 company working across India on child education, women empowerment, men's mental health, and transgender equality. Rooted in Ludhiana, Punjab. Reaching across India.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Twitter/X"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Our Work</div>
+          <div class="footer__links">
+            <a href="pillar-education.html">Child Education</a>
+            <a href="pillar-women.html">Women Empowerment</a>
+            <a href="pillar-mental-health.html">Men's Mental Health</a>
+            <a href="pillar-transgender.html">Transgender Equality</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Organisation</div>
+          <div class="footer__links">
+            <a href="about.html">About Us</a>
+            <a href="about.html#leadership">Leadership</a>
+            <a href="about.html#reports">Annual Reports</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <div style="font-family:var(--font-body);font-size:.875rem;color:rgba(255,255,255,.6);line-height:1.8">
+            <p>#2780, St. No. 5B, Guru Nanak Colony,<br>W. No. 61 Block-B, GNE College,<br>Ludhiana 141006, Punjab</p>
+            <br>
+            <p>Mental Health Helpline:<br><a href="tel:14416" style="color:#a5d6a7;font-weight:600">TeleMANAS: 14416</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <p>
+          <strong>ATIPRIYE SOCH FOUNDATION</strong> (a Section 8 company) &nbsp;|&nbsp;
+          Regd. Office: #2780, St. No. 5B, Guru Nanak Colony, W. No. 61 Block-B, GNE College, Ludhiana 141006, Punjab &nbsp;|&nbsp;
+          CIN: U85500PB2024NPL061137 &nbsp;|&nbsp; NGO Darpan: PB/2024/0407003 &nbsp;|&nbsp;
+          Helpline: 14416 &nbsp;|&nbsp; Email: info@atipriyesochfoundation.org &nbsp;|&nbsp; Web: atipriyesochfoundation.org
+        </p>
+        <p style="margin-top:.5rem">Copyright &copy; 2024–2026 Atipriye Soch Foundation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+    const closeBtn = document.getElementById('mobile-close-btn');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      overlay.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      overlay.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    // Intersection Observer for counter animation
+    function animateCounters() {
+      document.querySelectorAll('.counter[data-target]').forEach(el => {
+        const target = parseInt(el.dataset.target);
+        if (isNaN(target)) return;
+        const duration = 1500;
+        const start = performance.now();
+        function step(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(eased * target).toLocaleString('en-IN');
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+
+    const statsSection = document.getElementById('stats');
+    if (statsSection) {
+      const io = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          animateCounters();
+          io.disconnect();
+        }
+      }, { threshold: 0.3 });
+      io.observe(statsSection);
+    }
+  </script>
+</body>
+</html>
